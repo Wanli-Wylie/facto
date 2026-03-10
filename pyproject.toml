@@ -2,7 +2,6 @@
 name = "facto"
 version = "0.1.8"
 description = "Structural fact extraction from Fortran source code into a coordinate system"
-readme = "README.md"
 authors = [
     { name = "Wanli-Wylie", email = "zhang.wl.earth@gmail.com" }
 ]
@@ -19,6 +18,9 @@ dev = ["pytest>=8.0"]
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/facto"]
